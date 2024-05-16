@@ -13,5 +13,5 @@ Các chức năng gồm:
 - Đăng nhập (sử dụng mô hình 3 lớp): kiểm tra tài khoản đăng nhập, phiên đăng nhập
 - Đăng xuất
 - Thêm, sửa, xóa, tìm kiếm theo từng form
-- In hóa đơn, phiếu nhập
+- In hóa đơn, phiếu nhập (sử dụng Microsoft RDLC Report Designer, Microsoft reportviewercontrol)
 - Thống kê
