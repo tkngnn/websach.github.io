@@ -1,0 +1,1244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MM:Instances xmlns:MM="http://schemas.microsoft.com/sqlserver/ManagementModel/Serialization/2010/11" xmlns:RE="http://schemas.microsoft.com/sqlserver/RelationalEngine/Serialization/2010/11">
+    <RE:Database MM:Key="/Database[DA_QLSACH]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:CompatibilityLevel>Version100</RE:CompatibilityLevel>
+        <RE:Name>DA_QLSACH</RE:Name>
+    </RE:Database>
+    <RE:Schema MM:Key="/Database[DA_QLSACH]/Schema[dbo]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]" />
+        <RE:Name>dbo</RE:Name>
+        <RE:Owner MM:ReferenceKey="/Database[DA_QLSACH]/User[dbo]" />
+    </RE:Schema>
+    <RE:StoredProcedure MM:Key="/Database[DA_QLSACH]/Schema[dbo]/StoredProcedure[proc_dangnhap]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:BodyText>begin
+	select * from NhanVien where NhanVien.UsernameNV = @user and NhanVien.PasswordNV = @pass
+end</RE:BodyText>
+        <RE:ExecutionContext>
+            <RE:ContextType>Caller</RE:ContextType>
+        </RE:ExecutionContext>
+        <RE:ForReplication>False</RE:ForReplication>
+        <RE:IsEncrypted>False</RE:IsEncrypted>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:IsRecompiled>False</RE:IsRecompiled>
+        <RE:IsSqlClr>False</RE:IsSqlClr>
+        <RE:Name>proc_dangnhap</RE:Name>
+        <RE:Parameters>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/StoredProcedure[proc_dangnhap]/ScalarParameter[@user]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/StoredProcedure[proc_dangnhap]/ScalarParameter[@pass]" />
+        </RE:Parameters>
+        <RE:Startup>False</RE:Startup>
+    </RE:StoredProcedure>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[MA_CTHD]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[MaHD]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[MaSach]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[SoLuong]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[DonGia]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[ThanhTienSP]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>CTHoaDon</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[Ma_CTPN]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[MaPN]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[MaSach]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[SoLuongNhap]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[DonGiaNhap]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[ThanhTien]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>CTPhieuNhap</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[MaHD]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[MaNV]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[MaKH]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[NgayTao_HD]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[TongTien_HD]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[TrangThai]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>HoaDon</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[MaKH]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[TenKH]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[SDT_KH]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[NgayTaoKH]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[TrangThaiKH]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>KhachHang</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[MaNCC]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[TenNCC]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[DiaChiNCC]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[SDT_NCC]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[Email_NCC]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[NgayTao_NCC]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[TrangThai_NCC]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>NhaCungCap</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[MaNV]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[TenNV]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[UsernameNV]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[PasswordNV]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[Quyen]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[TrangThaiNV]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[NgayTaoNV]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>NhanVien</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[MaPN]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[MaNCC]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[MaNV]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[NgayTao_PN]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[TongTien_PN]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[TrangThai]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>PhieuNhap</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[MaSach]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TenSach]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TenTacGia]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TenTheLoai]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[HinhAnh]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[SoLuong]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[GiaBan]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TrangThai_Sach]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[NgayXuatBan]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>Sach</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/Column[MaTG]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/Column[TenTG]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/Column[MoTa]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>TacGia</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/Column[MaTL]" />
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/Column[TenTL]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>TheLoai</RE:Name>
+    </RE:Table>
+    <RE:ScalarParameter MM:Key="/Database[DA_QLSACH]/Schema[dbo]/StoredProcedure[proc_dangnhap]/ScalarParameter[@user]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>50</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsOutput>False</RE:IsOutput>
+        <RE:Name>@user</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+    </RE:ScalarParameter>
+    <RE:ScalarParameter MM:Key="/Database[DA_QLSACH]/Schema[dbo]/StoredProcedure[proc_dangnhap]/ScalarParameter[@pass]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>30</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsOutput>False</RE:IsOutput>
+        <RE:Name>@pass</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+    </RE:ScalarParameter>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[MA_CTHD]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MA_CTHD</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[MaHD]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaHD</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[MaSach]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaSach</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[SoLuong]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>SoLuong</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[DonGia]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>18</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Decimal</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>DonGia</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[ThanhTienSP]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>18</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Decimal</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>ThanhTienSP</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/PrimaryKeyConstraint[PK__CTHoaDon__B74B6E15117F9D94]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/RelationalIndex[PK__CTHoaDon__B74B6E15117F9D94]" />
+        <RE:Name>PK__CTHoaDon__B74B6E15117F9D94</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:DmlTrigger MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/DmlTrigger[CapNhatTongTienHD]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]" />
+        <RE:BodyText>BEGIN
+    UPDATE HoaDon
+    SET TongTien_HD = (SELECT SUM(ThanhTienSP) FROM inserted WHERE MaHD = HoaDon.MaHD)
+    FROM HoaDon
+    INNER JOIN inserted ON HoaDon.MaHD = inserted.MaHD
+END</RE:BodyText>
+        <RE:Delete>False</RE:Delete>
+        <RE:ExecutionContext>
+            <RE:ContextType>Caller</RE:ContextType>
+        </RE:ExecutionContext>
+        <RE:Insert>True</RE:Insert>
+        <RE:InsteadOf>False</RE:InsteadOf>
+        <RE:IsEncrypted>False</RE:IsEncrypted>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>CapNhatTongTienHD</RE:Name>
+        <RE:NotForReplication>False</RE:NotForReplication>
+        <RE:Update>False</RE:Update>
+    </RE:DmlTrigger>
+    <RE:DmlTrigger MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/DmlTrigger[KiemTraSoLuongSachTruocKhiThemHD]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]" />
+        <RE:BodyText>BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @SoLuong INT, @MaSach INT
+
+    SELECT @SoLuong = SoLuong, @MaSach = MaSach
+    FROM inserted
+
+    IF @SoLuong &gt; (SELECT SoLuong FROM Sach WHERE MaSach = @MaSach)
+    BEGIN
+        ROLLBACK;
+        RAISERROR ('Số lượng sách không đủ', 16, 1);
+    END
+END</RE:BodyText>
+        <RE:Delete>False</RE:Delete>
+        <RE:ExecutionContext>
+            <RE:ContextType>Caller</RE:ContextType>
+        </RE:ExecutionContext>
+        <RE:Insert>True</RE:Insert>
+        <RE:InsteadOf>False</RE:InsteadOf>
+        <RE:IsEncrypted>False</RE:IsEncrypted>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>KiemTraSoLuongSachTruocKhiThemHD</RE:Name>
+        <RE:NotForReplication>False</RE:NotForReplication>
+        <RE:Update>False</RE:Update>
+    </RE:DmlTrigger>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[Ma_CTPN]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>Ma_CTPN</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[MaPN]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaPN</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[MaSach]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaSach</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[SoLuongNhap]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>SoLuongNhap</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[DonGiaNhap]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>18</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Decimal</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>DonGiaNhap</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[ThanhTien]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>18</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Decimal</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>ThanhTien</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/PrimaryKeyConstraint[PK__CTPhieuN__3FEC89221CF15040]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/RelationalIndex[PK__CTPhieuN__3FEC89221CF15040]" />
+        <RE:Name>PK__CTPhieuN__3FEC89221CF15040</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[MaHD]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaHD</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[MaNV]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaNV</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[MaKH]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaKH</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[NgayTao_HD]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>DateTime</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NgayTao_HD</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[TongTien_HD]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>18</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Decimal</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TongTien_HD</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[TrangThai]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TrangThai</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/PrimaryKeyConstraint[PK__HoaDon__2725A6E00DAF0CB0]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/RelationalIndex[PK__HoaDon__2725A6E00DAF0CB0]" />
+        <RE:Name>PK__HoaDon__2725A6E00DAF0CB0</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[MaKH]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaKH</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[TenKH]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenKH</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[SDT_KH]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>12</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>SDT_KH</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[NgayTaoKH]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>DateTime</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NgayTaoKH</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[TrangThaiKH]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TrangThaiKH</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/PrimaryKeyConstraint[PK__KhachHan__2725CF1E060DEAE8]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/RelationalIndex[PK__KhachHan__2725CF1E060DEAE8]" />
+        <RE:Name>PK__KhachHan__2725CF1E060DEAE8</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[MaNCC]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaNCC</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[TenNCC]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenNCC</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[DiaChiNCC]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>DiaChiNCC</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[SDT_NCC]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>12</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>SDT_NCC</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[Email_NCC]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>50</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>Email_NCC</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[NgayTao_NCC]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>DateTime</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NgayTao_NCC</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[TrangThai_NCC]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TrangThai_NCC</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/PrimaryKeyConstraint[PK__NhaCungC__3A185DEB15502E78]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/RelationalIndex[PK__NhaCungC__3A185DEB15502E78]" />
+        <RE:Name>PK__NhaCungC__3A185DEB15502E78</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[MaNV]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaNV</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[TenNV]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenNV</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[UsernameNV]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>50</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>UsernameNV</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[PasswordNV]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>30</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>PasswordNV</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[Quyen]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>Quyen</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[TrangThaiNV]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TrangThaiNV</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[NgayTaoNV]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>DateTime</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NgayTaoNV</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/PrimaryKeyConstraint[PK__NhanVien__2725D70A7F60ED59]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[PK__NhanVien__2725D70A7F60ED59]" />
+        <RE:Name>PK__NhanVien__2725D70A7F60ED59</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:UniqueConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/UniqueConstraint[UQ__NhanVien__15DC503D023D5A04]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[UQ__NhanVien__15DC503D023D5A04]" />
+        <RE:Name>UQ__NhanVien__15DC503D023D5A04</RE:Name>
+    </RE:UniqueConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[MaPN]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaPN</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[MaNCC]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaNCC</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[MaNV]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaNV</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[NgayTao_PN]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>DateTime</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NgayTao_PN</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[TongTien_PN]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>18</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Decimal</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TongTien_PN</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[TrangThai]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TrangThai</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/PrimaryKeyConstraint[PK__PhieuNha__2725E7F01920BF5C]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/RelationalIndex[PK__PhieuNha__2725E7F01920BF5C]" />
+        <RE:Name>PK__PhieuNha__2725E7F01920BF5C</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[MaSach]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaSach</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TenSach]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenSach</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TenTacGia]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenTacGia</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TenTheLoai]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenTheLoai</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[HinhAnh]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>225</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>HinhAnh</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[SoLuong]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>SoLuong</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[GiaBan]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>18</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Decimal</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>GiaBan</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[TrangThai_Sach]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TrangThai_Sach</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[NgayXuatBan]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>DateTime</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NgayXuatBan</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/PrimaryKeyConstraint[PK__Sach__B235742D09DE7BCC]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/RelationalIndex[PK__Sach__B235742D09DE7BCC]" />
+        <RE:Name>PK__Sach__B235742D09DE7BCC</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/Column[MaTG]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaTG</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/Column[TenTG]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenTG</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/Column[MoTa]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarCharMax</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MoTa</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/PrimaryKeyConstraint[PK__TacGia__2725007424927208]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/RelationalIndex[PK__TacGia__2725007424927208]" />
+        <RE:Name>PK__TacGia__2725007424927208</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/Column[MaTL]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>MaTL</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/Column[TenTL]">
+        <RE:Collation>
+            <RE:Name>SQL_Latin1_General_CP1_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>255</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>NVarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>TenTL</RE:Name>
+        <RE:Nullable>True</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/PrimaryKeyConstraint[PK__TheLoai__2725007120C1E124]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/RelationalIndex[PK__TheLoai__2725007120C1E124]" />
+        <RE:Name>PK__TheLoai__2725007120C1E124</RE:Name>
+    </RE:PrimaryKeyConstraint>
+</MM:Instances>

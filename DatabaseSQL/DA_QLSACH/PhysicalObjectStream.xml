@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MM:Instances xmlns:MM="http://schemas.microsoft.com/sqlserver/ManagementModel/Serialization/2010/11" xmlns:RE="http://schemas.microsoft.com/sqlserver/RelationalEngine/Serialization/2010/11">
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/RelationalIndex[PK__CTHoaDon__B74B6E15117F9D94]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/PrimaryKeyConstraint[PK__CTHoaDon__B74B6E15117F9D94]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/RelationalIndex[PK__CTHoaDon__B74B6E15117F9D94]/IndexedColumn[MA_CTHD]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__CTHoaDon__B74B6E15117F9D94</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/RelationalIndex[PK__CTPhieuN__3FEC89221CF15040]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/PrimaryKeyConstraint[PK__CTPhieuN__3FEC89221CF15040]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/RelationalIndex[PK__CTPhieuN__3FEC89221CF15040]/IndexedColumn[Ma_CTPN]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__CTPhieuN__3FEC89221CF15040</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/RelationalIndex[PK__HoaDon__2725A6E00DAF0CB0]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/PrimaryKeyConstraint[PK__HoaDon__2725A6E00DAF0CB0]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/RelationalIndex[PK__HoaDon__2725A6E00DAF0CB0]/IndexedColumn[MaHD]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__HoaDon__2725A6E00DAF0CB0</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/RelationalIndex[PK__KhachHan__2725CF1E060DEAE8]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/PrimaryKeyConstraint[PK__KhachHan__2725CF1E060DEAE8]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/RelationalIndex[PK__KhachHan__2725CF1E060DEAE8]/IndexedColumn[MaKH]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__KhachHan__2725CF1E060DEAE8</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/RelationalIndex[PK__NhaCungC__3A185DEB15502E78]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/PrimaryKeyConstraint[PK__NhaCungC__3A185DEB15502E78]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/RelationalIndex[PK__NhaCungC__3A185DEB15502E78]/IndexedColumn[MaNCC]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__NhaCungC__3A185DEB15502E78</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[PK__NhanVien__2725D70A7F60ED59]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/PrimaryKeyConstraint[PK__NhanVien__2725D70A7F60ED59]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[PK__NhanVien__2725D70A7F60ED59]/IndexedColumn[MaNV]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__NhanVien__2725D70A7F60ED59</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[UQ__NhanVien__15DC503D023D5A04]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/UniqueConstraint[UQ__NhanVien__15DC503D023D5A04]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[UQ__NhanVien__15DC503D023D5A04]/IndexedColumn[UsernameNV]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>False</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>UQ__NhanVien__15DC503D023D5A04</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/RelationalIndex[PK__PhieuNha__2725E7F01920BF5C]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/PrimaryKeyConstraint[PK__PhieuNha__2725E7F01920BF5C]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/RelationalIndex[PK__PhieuNha__2725E7F01920BF5C]/IndexedColumn[MaPN]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__PhieuNha__2725E7F01920BF5C</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/RelationalIndex[PK__Sach__B235742D09DE7BCC]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/PrimaryKeyConstraint[PK__Sach__B235742D09DE7BCC]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/RelationalIndex[PK__Sach__B235742D09DE7BCC]/IndexedColumn[MaSach]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__Sach__B235742D09DE7BCC</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/RelationalIndex[PK__TacGia__2725007424927208]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/PrimaryKeyConstraint[PK__TacGia__2725007424927208]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/RelationalIndex[PK__TacGia__2725007424927208]/IndexedColumn[MaTG]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__TacGia__2725007424927208</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/RelationalIndex[PK__TheLoai__2725007120C1E124]">
+        <RE:Parent MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/PrimaryKeyConstraint[PK__TheLoai__2725007120C1E124]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/RelationalIndex[PK__TheLoai__2725007120C1E124]/IndexedColumn[MaTL]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__TheLoai__2725007120C1E124</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/RelationalIndex[PK__CTHoaDon__B74B6E15117F9D94]/IndexedColumn[MA_CTHD]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTHoaDon]/Column[MA_CTHD]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/RelationalIndex[PK__CTPhieuN__3FEC89221CF15040]/IndexedColumn[Ma_CTPN]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[CTPhieuNhap]/Column[Ma_CTPN]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/RelationalIndex[PK__HoaDon__2725A6E00DAF0CB0]/IndexedColumn[MaHD]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[HoaDon]/Column[MaHD]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/RelationalIndex[PK__KhachHan__2725CF1E060DEAE8]/IndexedColumn[MaKH]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[KhachHang]/Column[MaKH]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/RelationalIndex[PK__NhaCungC__3A185DEB15502E78]/IndexedColumn[MaNCC]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhaCungCap]/Column[MaNCC]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[PK__NhanVien__2725D70A7F60ED59]/IndexedColumn[MaNV]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[MaNV]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/RelationalIndex[UQ__NhanVien__15DC503D023D5A04]/IndexedColumn[UsernameNV]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[NhanVien]/Column[UsernameNV]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/RelationalIndex[PK__PhieuNha__2725E7F01920BF5C]/IndexedColumn[MaPN]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[PhieuNhap]/Column[MaPN]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/RelationalIndex[PK__Sach__B235742D09DE7BCC]/IndexedColumn[MaSach]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[Sach]/Column[MaSach]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/RelationalIndex[PK__TacGia__2725007424927208]/IndexedColumn[MaTG]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TacGia]/Column[MaTG]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/RelationalIndex[PK__TheLoai__2725007120C1E124]/IndexedColumn[MaTL]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[DA_QLSACH]/Schema[dbo]/Table[TheLoai]/Column[MaTL]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:Login MM:Key="/Login[LAPTOP-G3PJNK5T\admin]">
+        <RE:Language>us_english</RE:Language>
+        <RE:LoginType>Windows</RE:LoginType>
+        <RE:Name>LAPTOP-G3PJNK5T\admin</RE:Name>
+    </RE:Login>
+</MM:Instances>
